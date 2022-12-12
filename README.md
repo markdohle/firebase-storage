@@ -9,6 +9,12 @@ Again, you should reference the Firebase storage library and write the code for 
 
 After the Storage is created for the project. Goto rules link and allow read and write without any conditionals.
 
+If you stuck and can't create a storage bucket for your project on the firebase website, then [use the CLI](https://stackoverflow.com/questions/74750161/why-i-receive-an-error-while-creating-firebase-storage/74750337#74750337)
+
+```firebase init storage```
+
+```firebase deploy --only storage```
+
 ```
 rules_version = '2';
 service cloud.firestore {
@@ -20,9 +26,6 @@ service cloud.firestore {
 }
 ```
 
-Create storage on the firmbase website. This is the line to the configuration object for your project.
-
-It is the line for ```storageBucket:```
 
 ```
 {
@@ -135,3 +138,5 @@ apiKey: "AIzaSyA0Qwq8mysTh3V1jSksRwKsKdgZ1cxJ_O8",
 
 }());
 ```
+
+4. Drag the html to the browser and upload an image file. Check the firebase project Storage to see if an image named "globe" was added.
